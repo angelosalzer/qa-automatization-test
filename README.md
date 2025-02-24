@@ -29,6 +29,7 @@ Siga os passos abaixo para configurar o projeto:
 
 ## 🚀 Executando os Testes
 Modo Interativo
+
 Para executar os testes no modo interativo (com interface gráfica), use o comando:
 
 ```bash
@@ -68,9 +69,11 @@ Verifica se o login é realizado com sucesso e se a página de inventário é ca
 Abaixo estão os cenários de teste implementados no arquivo Tela_de_listagem_de_produtos.cy.js
 
 1. Deve listar todos os produtos corretamente
+
 Verifica se todos os 6 produtos estão listados corretamente na página de inventário.
 
 2. Filtragem de Produtos
+
 Testa a funcionalidade de filtragem por:
 
 - Nome (A to Z)
@@ -79,7 +82,7 @@ Testa a funcionalidade de filtragem por:
 
 - Preço (high to low)
 
-Abaixo estão os cenários de teste implementados no arquivo Adição_de_rodutos_ao_carrinho.cy.js
+Abaixo estão os cenários de teste implementados no arquivo Adição_de_produtos_ao_carrinho.cy.js
 
 1. Adição e Remoção de Produtos no Carrinho
 Adiciona e remove produtos do carrinho, verificando se o ícone do carrinho reflete a quantidade correta de itens.
@@ -93,6 +96,7 @@ Verifca se a adição de múltiplos produtos ao carrinho está funcionando corre
 Abaixo estão os cenários de teste implementados no arquivo Finalização_de_compra.cy.js
 
 1. Finalização de Compra
+
 Cobre o fluxo completo de finalização de compra para:
 
 - 1 item
@@ -104,22 +108,24 @@ Cobre o fluxo completo de finalização de compra para:
 2. Inclui preenchimento de informações de checkout e verificação da mensagem de confirmação.
 
 3. Logout
+   
 Verifica se o logout é realizado com sucesso e se o usuário é redirecionado para a página de login.
 
 ## 📝 Observações
 
-Os testes foram dividos em 4 arquivos, para que qualquer alteração no projeto, que venha a necessitar da alteração de um código de teste, seja feita mais com mais facilidade e precisão.
+Os testes foram dividos em 4 arquivos, para que qualquer alteração no projeto, que venha a necessitar da alteração de um código de teste, seja feita com mais facilidade e precisão.
 
 ## ❌ Falhas detectadas
 
 Foram encontrados erros nos usuários "problem_user" e "performance_glitch_user"
-O usuário performance_glitch_user tem os seguintes problemas:
+
+O usuário "performance_glitch_user" tem os seguintes problemas:
 
 1. Lentidão no carregamento: A página demora mais para carregar.
 
 2. Problemas de desempenho ao interagir com elementos: Ações como clicar em botões podem demorar mais para serem processadas.
 
-Já o usuário problem_user tem os seguintes problemas conhecidos:
+Já o usuário "problem_user" tem os seguintes problemas conhecidos:
 
 1. Imagens quebradas: As imagens dos produtos não são carregadas corretamente.
 
